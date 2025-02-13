@@ -13,6 +13,8 @@ public class Main {
     public Main(){
         Board papan = new Board();
         Scann scan = new Scann();
+        boolean player1 = true;
+        int movement = 0;
         while(true){
             papan.printBoard();
             System.out.println("Input koordinat[x,y]: ");
@@ -24,7 +26,7 @@ public class Main {
             }
 
             char player;
-            boolean player1 = true;
+
             if(player1){
                 player = 'O';
                 player1 = false;
@@ -33,7 +35,7 @@ public class Main {
                 player = 'X';
                 player1 = true;
             }
-            int movement = 0;
+
             movement++;
             papan.setBoard(koordinat,player);
             boolean win = papan.checkWin(player);

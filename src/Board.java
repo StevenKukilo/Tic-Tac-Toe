@@ -5,14 +5,14 @@ public class Board {
 
     public Board(){
         for (char[] chars : board) {
-            Arrays.fill(chars, ' ');
+            Arrays.fill(chars, '-');
         }
 
 
     }
 
     public boolean checkBoard(Koordinat koordinat){
-        return board[koordinat.y][koordinat.x] == ' ';
+        return board[koordinat.y][koordinat.x] == '-';
     }
 
     public void setBoard(Koordinat koordinat,  char player){

@@ -6,6 +6,7 @@ public class Scann {
     public Koordinat scan(){
         int x = scanner.nextInt();
         int y = scanner.nextInt();
+
         return new Koordinat(x,y);
     }
 
